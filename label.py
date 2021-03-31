@@ -12,7 +12,8 @@ def img_file_name(file_dir):
     #                L.append(' '+'this is anohter file\'s name')
     return L
 
-imgdir = '/media/s1mple/新加卷/project/data/3'
+imgdir = '/media/s1mple/新加卷/project/data/2'
+fake_imgdir = 'home/s1mple/data/2'
 list_txt_file = 'list.txt'
 docs = os.listdir(imgdir)
 
@@ -22,5 +23,5 @@ for name in docs:
         label_folder = imgdir + '/' + name
 
         with open(list_txt_file, 'a') as f:
-            f.write(f"{imgdir}/{name} 3\n")
+            f.write(f"{fake_imgdir}/{name} 1\n")
         f.close()
